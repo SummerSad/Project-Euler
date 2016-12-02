@@ -3,12 +3,12 @@
 
 //What is the largest prime factor of the number 600851475143 ?
 
-long int is_prime(long int n)
+long long int is_prime(long long int n)
 {
-	long int i;
+	long long int i;
 	if (n == 1)
 		return 0;
-	for (i = 2; i < n / 2 + 1; ++i)
+	for (i = 2; i <= sqrt((double)n); ++i)
 	{
 		if (n%i == 0)
 			return 0;
@@ -16,12 +16,16 @@ long int is_prime(long int n)
 	return 1;
 }
 
-long int largest_p_factor(long int n)
+long long int largest_p_factor(long long int n)
 {
-	long int i;
-	for (i = n; i > 0; --i)
+	long long int i;
+	long long tam = n;
+	while (tam % 2 == 0 && tam > 2)
+		tam /= 2;
+
+	for (i = floor(sqrt((double(tam)))) + 1; i > 0; i -= 2) // run from sqrt(n) //because n is not a prime
 	{
-		if (is_prime(i) && n%i == 0)
+		if (is_prime(i) && tam%i == 0)
 			return i;
 	}
 	return 1;
@@ -29,10 +33,11 @@ long int largest_p_factor(long int n)
 
 int main(void)
 {
-	long int n;
-	printf("Nhap n: ");
-	scanf("%ld", &n);
+	long long int n;
 
-	printf("%ld largest p factor: %ld\n", n, largest_p_factor(n));
+	printf("Nhap n: ");
+	scanf("%lld", &n);
+	
+	printf("%lld largest p factor: %lld\n", n, largest_p_factor(n));
 	return 0;
 }
