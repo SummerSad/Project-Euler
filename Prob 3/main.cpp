@@ -16,7 +16,7 @@ long long int is_prime(long long int n)
 	return 1;
 }
 
-long long int largest_p_factor(long long int n)
+long long int largest_p_factor(long long int n) // excpet when n is a prime
 {
 	long long int i;
 	long long tam = n;
