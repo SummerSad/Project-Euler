@@ -21,9 +21,9 @@ int main(void)
 	int i, j, max;
 	max = 0;
 
-	for (i = 999; i > 99; --i)
+	for (i = 999; i > 99; --i) // run from 999
 	{
-		for (j = 999; j > 99; --j)
+		for (j = i; j > 99; --j) // run from i (avoid repeat)
 		{
 			if (palindrome(i*j))
 			{
