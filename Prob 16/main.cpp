@@ -1,6 +1,5 @@
 // Power digit sum
 
-#include "stdafx.h"
 #include <stdio.h>
 int r[1001], d, sum = 0;
 unsigned char flag;
