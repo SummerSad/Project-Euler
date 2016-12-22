@@ -192,3 +192,4 @@ ModelManifest.xml
 *.sln
 *.db
 *.opendb
+*.exe
