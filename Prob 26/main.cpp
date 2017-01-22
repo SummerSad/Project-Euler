@@ -3,7 +3,7 @@
 // 1/3=0.(3)
 
 // the idea: val=10%d -> then check; ; val*=10; val=val%d ; check
-// put in while
+// put in the loop
 // if val==1 stop. because the next is 10 - 1 - 10 - 1...
 #include "func.h"
 
