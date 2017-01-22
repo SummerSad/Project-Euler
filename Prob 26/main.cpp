@@ -19,3 +19,9 @@ int main(void)
 	printf("%d\n", max);
 	return 0;
 }
+
+// another idea
+// 1/3=3/9-0.(3)
+// 1/11=9/99=0.(09)
+// the smallest number of 9 which d | 99..99
+// is the recurring cycle of d
