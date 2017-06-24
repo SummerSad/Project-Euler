@@ -1,3 +1,1 @@
-Solving Problem from Project Euler
-
-Write with C 
+### Problem solved in C [Project Euler](https://projecteuler.net/) 
