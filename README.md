@@ -2,5 +2,6 @@
 ![My Badge](https://projecteuler.net/profile/summersad.png)
 
 - [x] Problem 1 - 25
-- [ ] Problem 26 - 50
+- [x] Problem 26 - 50
+- [ ] Problem 51 - 75
 
